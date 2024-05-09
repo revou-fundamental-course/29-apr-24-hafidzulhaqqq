@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B U T I Q U</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./asset/logo.png" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#package">Our Package</a></li>
+          <li><a href="#call">Call Us</a></li>
+        </ul>
+      </nav>
+      <a href="#contact"><button class="btn">Contact Us</button></a>
+    </header>
+
+    <div class="home" id="home">
+      <h2>The Best Fashion Options are Here For You</h2>
+      <p>Affordable price and quality</p>
+    </div>
+
+    <div class="row">
+      <div class="col-1">
+        <li>
+          <img src="./asset/3.jpg" />
+        </li>
+        <li>
+          <img src="./asset/1.jpg" />
+        </li>
+        <li>
+          <img src="./asset/2.png" />
+        </li>
+      </div>
+
+      <div class="col-2">
+        <div class="container">
+          <div id="contact">
+            <h3 id="contact" style="margin-bottom: 5px">Contact Us</h3>
+            <p style="font-size: smaller">
+              Kami akan menghubungi anda 1 x 24 jam setelah data diterima
+            </p>
+            <div class="wrapper" style="margin-top: 30px">
+              <form name="" onsubmit="return validateForm()">
+                <p>
+                  <label for="name">name</label>
+                  <input type="text" id="name" name="Name" placeholder="name" />
+                  <span id="name-error" class="error-message"></span>
+                </p>
+
+                <p>
+                  <label for="email">email</label>
+                  <input
+                    type="text"
+                    id="email"
+                    name="EMail"
+                    placeholder="email"
+                  />
+                  <span id="email-error" class="error-message"></span>
+                </p>
+
+                <p>
+                  <label for="subject">what are you interested in ?</label>
+                  <select id="subject" name="Subject">
+                    <option value=""></option>
+                    <option value="baju">Baju</option>
+                    <option value="celana">Celana</option>
+                    <option value="tas">Tas</option>
+                    <option value="semua">Semuanya</option>
+                  </select>
+                  <span id="subject-error" class="error-message"></span>
+                </p>
+
+                <p>
+                  <input type="submit" value="Send" name="Submit" />
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="icon" style="margin-top: 50px; padding: 0 50px; display: flex">
+      <img src="./asset/icon.png" style="width: 4%" />
+      <div style="display: grid; margin-left: 15px">
+        <p style="font-weight: bold">CUSTOMER</p>
+        <p style="font-weight: lighter">
+          produk yang di jual lengkap dan beragam
+        </p>
+      </div>
+    </div>
+
+    <section style="margin-top: 100px; padding: 0 50px; margin-bottom: 70px">
+      <h3 style="font-weight: bold">OUR OFFERS</h3>
+      <div class="offers">
+        <ul style="margin-top: 20px">
+          <li>Pembayaran dapat dilakukan secara kredit tanpa bunga</li>
+          <li>Pembayaran cash mendapatkan cashback atau potongan harga</li>
+          <li>
+            Produk atau barang dapat dikembalikan apabila tidak sesuai atau
+            produk cacat
+          </li>
+          <li>Tersedia outfit luar dalam dan juga tas</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="package" id="package">
+      <h2>Our Product Item Package</h2>
+      <p>Products offered to you</p>
+    </div>
+
+    <div class="row-2" style="margin-top: 30px">
+      <div class="column">
+        <div class="card">
+          <h3 style="font-size: 15px; margin-bottom: 15px">BAJU</h3>
+          <img src="./asset/baju.png" style="width: 50px" />
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h3 style="font-size: 15px; margin-bottom: 15px">CELANA</h3>
+          <img src="./asset/celana.png" style="width: 50px" />
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h3 style="font-size: 15px; margin-bottom: 15px">SETELAN</h3>
+          <img src="./asset/setelan.png" style="width: 50px" />
+        </div>
+      </div>
+    </div>
+    <div class="row-2" style="margin-top: 50px">
+      <div class="column">
+        <div class="card">
+          <h3 style="font-size: 15px; margin-bottom: 15px">TAS</h3>
+          <img src="./asset/tas.png" style="width: 50px" />
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <h3 style="font-size: 15px; margin-bottom: 15px">UNDER WEAR</h3>
+          <img src="./asset/under-wear.png" style="width: 50px" />
+        </div>
+      </div>
+    </div>
+
+    <div class="call" id="call">
+      <h2>Call Us</h2>
+      <p>If you are interested, you can contact us via the contact below</p>
+      <button class="button-wa" role="button">+62 85859753164</button>
+    </div>
+
+    <div class="footer">
+      <p>make with <img src="./asset/heart.png" /> by zul</p>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
